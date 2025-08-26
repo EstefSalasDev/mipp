@@ -1,0 +1,296 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Red+Rose:wght@300..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+/* Container principal */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* Sección izquierda */
+.left-section {
+  flex: 1;
+  background-color: #791524; /* Rojo granate */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  color: white;
+}
+
+/* Sol */
+.sun-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sun-image {
+  width: 15vw;
+  max-width: 400px;
+  min-width: 120px;
+  height: auto;
+  object-fit: contain;
+  transition: width 0.3s;
+}
+
+/* Título principal */
+.title-container {
+  padding-top: 10vw;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-content {
+  text-align: center;
+  max-width: 40rem;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+  font-family: "Red Rose", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Edificios */
+.buildings-container {
+  position: relative;
+  height: 20rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.edificios-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+/* Sección derecha */
+.right-section {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header con logos */
+.header-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 8rem 0 8rem;
+}
+.header-logos img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.logo-ctpmn{
+  display: flex;
+  align-items: center;
+}
+
+.ctpmn-logo {
+  height: 80px;
+  object-fit: contain;
+}
+
+.logo-mipp {
+  display: flex;
+  align-items: center;
+}
+
+.mipp-logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Formulario */
+.form-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 2rem 2rem 2 rem;
+  margin-top: 0;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 28rem;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #791524;
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Grupos de input */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  z-index: 1;
+}
+
+.form-input {
+  width: 100%;
+  height: 3rem;
+  padding-left: 2.5rem;
+  padding-right: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #791524;
+  box-shadow: 0 0 0 3px rgba(153, 27, 27, 0.1);
+}
+
+/* Enlace de contraseña olvidada */
+.forgot-password {
+  text-align: right;
+}
+
+.forgot-link {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.forgot-link:hover {
+  color: #791524;
+}
+
+/* Botón de submit */
+.submit-button {
+  width: 100%;
+  height: 3rem;
+  background-color: #791524;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #5e111d;
+}
+
+.submit-button:active {
+  background-color: #6b1320;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .left-section {
+    min-height: 40vh;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .buildings-container {
+    height: 8rem;
+  }
+
+  .header-logos {
+    padding: 1rem;
+  }
+
+  .form-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .sun-image {
+    width: 60px;
+    height: auto;
+  }
+
+  .buildings-container {
+    height: 6rem;
+  }
+
+  .tpmn-logo {
+    height: 0px;
+  }
+  .mipp-logo {
+    height: 25px;
+  }
+}

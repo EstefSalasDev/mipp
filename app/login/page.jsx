@@ -1,3 +1,4 @@
+
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import LoginForm from './LoginForm';
@@ -10,5 +11,5 @@ export default async function Page() {
     // redirect server-side to avoid client flicker
     redirect('/home');
   }
-  return <LoginForm />;
+  return < LoginForm />;
 }
